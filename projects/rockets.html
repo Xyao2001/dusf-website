@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>DUSF</title>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/index-stylesheet.css">
+  <link rel="stylesheet" href="../css/index-stylesheet.css">
+	<link rel="stylesheet" href="../css/projects.css">
     <link rel="icon" href="../images/DUSF_Circle.png">
 </head>
 
@@ -17,74 +18,70 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">DU</span>SF
-                </a>
-            </div>
+    <nav id="header-style" class="navbar navbar-custom navbar-fixed-top navbar-expand-lg navbar-dark bg-black " >
+      <div class="container">
+         <div class="navbar-header">
+             <a class="navbar-brand page-scroll" href="#page-top">
+                 <i class=""></i>  <span class="light">DU</span>SF
+             </a>
+         </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                      <div class="dropdown">
-                        <button class="dropbtn">Home
-                          <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a class="page-scroll" href="../index.html#about">About</a>
-                          <a class="page-scroll" href="../index.html#projects">Our Projects</a>
-                          <a class="page-scroll" href="meet_the_execs.html">Meet The Execs</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="dropdown">
-                        <button class="dropbtn">High Altitude Balloons
-                          <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a class="page-scroll" href="../index.html#aether">Aether I</a>
-                          <a class="page-scroll" href="../index.html#aether2">Aether II</a>
-                        </div>
-                      </div>
+    <!--collapse navbar-collapse navbar-right navbar-main-collapse  -->
+
+    <div class="collapse navbar-collapse navbar-main-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="../index.html#about" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../index.html#projects">Our projects</a>
+
+            <a class="dropdown-item " href="meet_the_execs.html">Meet the execs</a>
+
+            <a class="dropdown-item" href="../index.html#community">Outreach</a>
+          </div>
+        </li>
+        <!--High Altitude Balloon Toggle-->
+        <li class ="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#"  id="navbarDropdown" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+            High Altitude Balloons
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="../index.html#aether">Aether I </a>
+            <!--<div class="dropdown-divider"></div>-->
+            <a class="dropdown-item " href="../index.html#aether2">Aether II</a>
+          </div>
+        </li>
+        <!--rocketry dropdown-->
+        <li class ="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#"  id="navbarDropdown" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+            Rocketry
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="rockets.html">TVC Rockets </a>
+
+          </div>
+        </li>
 
 
-                      <li>
-                        <div class="dropdown">
-                          <button class="dropbtn">Rockets
-                            <i class="fa fa-caret-down"></i>
-                          </button>
-                          <div class="dropdown-content">
-                            <a class="page-scroll" href="rockets.html">TVC Rockets</a>
-                          </div>
-                        </div>
+        <li class="nav-item ">
+          <a class="nav-link " href="gallery.html">Project Gallery</a>
+        </li>
+        <li class="nav-item ">
 
+          <a class="nav-link" href="../index.html#contact">Contact</a>
+        </li>
+      </ul>
 
-                    <li>
-                        <a class="page-scroll" href="gallery.html">Project Gallery</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="../index.html#community">Outreach</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="../index.html#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    </div>
+  </nav>
     <!-- Intro Header -->
     <header class="ro_intro">
         <div class="intro-body">
@@ -99,36 +96,50 @@
             </div>
         </div>
     </header>
-    <section id="aether2" class="container content-section text-center ">
-       <div class="aether-II-section"> <!--class names need to be all one word, otherwise it's seen as two class names: class="ab" is different fron class="a b", which has both classes "a" and "b"-->
-           <h2>A Competition</h2>
+    <section id="aether" class="container content-section text-center">
+        <div class="aether-section">
+            <p> </p>
+            <p>Starting from October 2021, DU spaceflight rocketry teams A and B have been building a TVC model rocket to compete with each other. Both teams use the Aerotech F40W 29mm diameter RMS Motor that sits in an RMS-29/40-120 motor casing.</p>
+            <div class="col-md-3">
 
-           <div class="col-md-6 aetherii-content" style="padding-top:15px;text-align: left;padding-left:90px;padding-right:90px;">
+                <img src="../images/rocketry/roc3.png" style="display: block; height: 100%; width: 100%;" >
+                <img src="../images/rocketry/roc2.png"  style="display: block; height: 100%; width: 100%;" >
+                <img src="../images/rocketry/roc6.jpeg"  style="display: block; height: 100%; width: 100%;" >
+                <img src="../images/rocketry/roc4.png"   style="display: block; height: 100%; width: 100%;" >
+            </div>
+            <div class="col-md-9 aether-content" style="padding-top:15px;text-align: left;">
+                <div class="row" style="text-align:center;">
+                    <div class="col-12">
+                        <h4 style="margin:10px; color:rgba(255, 255, 255, 0.514);"><strong>Objective</strong></h3>
+                        <h4>Design and build a small rocket to fly as high as possible, using a thrust-vector control system to stabilise itself, without any external human input during the flight.</h4>
+                    </div>
 
-               <p>Starting from October 2021, DU spaceflight rocketry teams A and B have been building a TVC model rocket to compete with each other. Both teams use the Aerotech F40W 29mm diameter RMS Motor that sits in an RMS-29/40-120 motor casing.</p>
-               <h4 style="margin:10px; color:rgba(255, 255, 255, 0.514);"><strong>Objective:</strong></h3>
-               <p>Design and build a small rocket to fly as high as possible, using a thrust-vector control system to stabilise itself, without any external human input during the flight.</p>
-               <div class=rocketrycompetition>
+                </div>
+                <h4> Team A </h4>
+                <p>We designed our rocket with the aim of it being as simple as possible. This meant removing redundant sensors like an altimeter, and opting for a simpler stage separation design. Like group B, our sensor suite included an MPU 6050 accelerometer to help guide our rocket and keep it vertical during flight with two SG-90 servo motors. Where we differed is in our choice of microcontroller.
+                   We chose to use an ESP32 due to its higher compute power and larger pinout.
+                  To log our flight data during flight, we logged it to the internal flash storage of our ESP32, then dumped it to a microSD card at the end of the flight. This was to improve reliability as sometimes the micro SD card can become dislodged during flight, whereas the flash chip is soldered on to the board so is not susceptible to this. Our coupler and body tube are made out of cardboard tubing and our thrust vector control (TVC) mount and nose cone are 3D printed.
+                </p>
+
+<div class="container-fluid">
+                <div class="row">
+                  <div class="col-6">
+                  <img src="../images/rocketry/roc5.png" > </div>
+                  <div class="col-6">
+                    <img src="../images/rocketry/roc7.jpg" > </div>
+                  </div>
+                </div>
 
 
-           </div>
+                <h4>Team B </h4>
+                </p>
+                <p>Our team ordered Arduino Nano to be used as a flight controller. The flight controller with a microSD reader serves as a data logger. We have included an MPU 6050 sensor, that measures the rotation and acceleration of the rocket, and a BMP 180, that senses the change in temperature and pressure while the rocket is in trajectory. Soldering the circuit board was a challenging task to do as the schematic we followed required many T-junctions and jumpers. After many hours of soldering and consistent testing, our flight controller proved to work. We used a 3D printer to print out a motor mount(TVC CAD file designed by the society) and different styles of nose cones to test which one is the most durable and aerodynamic.
+                </p>
 
-       </div>
 
-<div class="row">
-<div class="column" style="background-color:#383838;">
-    <h2 style="color:white">Team A</h2>
-    <p style="text-align: left;color:white">We designed our rocket with the aim of it being as simple as possible. This meant removing redundant sensors like an altimeter, and opting for a simpler stage separation design. Like group B, our sensor suite included an MPU 6050 accelerometer to help guide our rocket and keep it vertical during flight with two SG-90 servo motors. Where we differed is in our choice of microcontroller. We chose to use an ESP32 due to its higher compute power and larger pinout. To log our flight data during flight, we logged it to the internal flash storage of our ESP32, then dumped it to a microSD card at the end of the flight. This was to improve reliability as sometimes the micro SD card can become dislodged during flight, whereas the flash chip is soldered on to the board so is not susceptible to this. Our coupler and body tube are made out of cardboard tubing and our thrust vector control (TVC) mount and nose cone are 3D printed.</p>
-  </div>
-  <div class="column" style="background-color:#383838;">
-    <h2>Team B</h2>
-    <p style="text-align: left;">Our team ordered Arduino Nano to be used as a flight controller. The flight controller with a microSD reader serves as a data logger. We have included an MPU 6050 sensor, that measures the rotation and acceleration of the rocket, and a BMP 180, that senses the change in temperature and pressure while the rocket is in trajectory. Soldering the circuit board was a challenging task to do as the schematic we followed required many T-junctions and jumpers. After many hours of soldering and consistent testing, our flight controller proved to work. We used a 3D printer to print out a motor mount(TVC CAD file designed by the society) and different styles of nose cones to test which one is the most durable and aerodynamic.</p>
-  </div>
-  <div class="column" style="background-color:black;">
-    <image src="../images/rocketry_b.png"
-    <image width="200" height="470" style="object-fit: cover;"" src="../images/tvc_motor.png "
-  </div>
-   </section>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -138,9 +149,11 @@
    </div>
    </footer>
 
-
    <script src="../js/jquery.js"></script>
    <script id="main-script" src="../js/index-scripts.js"></script>
-   </body>
+
+   <!-- Latest compiled JavaScript  save this otherwise the responsive menu does not work -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
    </html>
