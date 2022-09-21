@@ -6,94 +6,84 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>DUSF</title>
-
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/index-stylesheet.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- An alternative to Bootstrap -->
-    <link rel="icon" href="images/DUSF_Circle.png">
+
+  <link rel="icon" href="images/DUSF_Circle.png">
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">DU</span>SF
-                </a>
-            </div>
+    <nav id="header-style" class="navbar navbar-custom navbar-fixed-top navbar-expand-lg navbar-dark bg-black " >
+      <div class="container">
+         <div class="navbar-header">
+             <a class="navbar-brand page-scroll" href="#page-top">
+                 <i class=""></i>  <span class="light">DU</span>SF
+             </a>
+         </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-           <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                      <div class="dropdown">
-                        <button class="dropbtn">Home
-                          <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a class="page-scroll" href="#about">About</a>
-                          <a class="page-scroll" href="#projects">Our Projects</a>
-                          <a class="page-scroll" href="projects/meet_the_execs.html">Meet The Execs</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="dropdown">
-                        <button class="dropbtn">High Altitude Balloons
-                          <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a class="page-scroll" href="#aether">Aether I</a>
-                          <a class="page-scroll" href="#aether2">Aether II</a>
-                        </div>
-                      </div>
+    <!--collapse navbar-collapse navbar-right navbar-main-collapse  -->
+
+    <div class="collapse navbar-collapse navbar-main-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#about" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#projects">Our projects</a>
+
+            <a class="dropdown-item" href="projects/meet_the_execs.html">Meet the execs</a>
+
+            <a class="dropdown-item" href="#community">Outreach</a>
+          </div>
+        </li>
+        <!--High Altitude Balloon Toggle-->
+        <li class ="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#"  id="navbarDropdown" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+            High Altitude Balloons
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#aether">Aether I </a>
+            <!--<div class="dropdown-divider"></div>-->
+            <a class="dropdown-item " href="#aether2">Aether II</a>
+          </div>
+        </li>
+        <!--rocketry dropdown-->
+        <li class ="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#"  id="navbarDropdown" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+            Rocketry
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="projects/rockets.html">TVC Rockets </a>
+
+          </div>
+        </li>
 
 
-                      <li>
-                        <div class="dropdown">
-                          <button class="dropbtn">Rockets
-                            <i class="fa fa-caret-down"></i>
-                          </button>
-                          <div class="dropdown-content">
-                            <a class="page-scroll" href="projects/rockets.html">TVC Rockets</a>
-                          </div>
-                        </div>
+        <li class="nav-item ">
+          <a class="nav-link" href="projects/gallery.html">Project Gallery</a>
+        </li>
+        <li class="nav-item ">
 
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
 
-                    <li>
-                        <a class="page-scroll" href="projects/gallery.html">Project Gallery</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#community">Outreach</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
+    </div>
+  </nav>
         <!-- /.container -->
-    </nav>
-
-    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
-
 
 
     <!-- Intro Header -->
@@ -113,6 +103,7 @@
         </div>
     </header>
 
+    <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="about-section">
             <div id="lg-viewport">
@@ -156,8 +147,7 @@
         </div>
     </section>
 
-
-    <section id="projects" class="container content-section text-center">  
+    <section id="projects" class="container content-section text-center">
         <div id="lg-viewport">
             <div class="col-md-6">
                 <h3>Our Projects</h3>
@@ -234,18 +224,18 @@
                 </div>
                 <p>In June 2020, DUSF successfully launched a high-altitude balloon to the edge of space. The balloon was equipped with a teddy bear pilot, two cameras and solar tracker. It steadily rose to an estimated altitude of 19km
                 capturing some incredible images of the Northwest of England and beautiful shots of the horizon with the familiar blue haze that dissipates to the darkness of space.</p>
-                <p>Our team worked remotely over the course of the year to research, design and build the balloon payload. Once it became possible to meet in-person, the modular components were assembled to complete the payload. The balloon was inflated with helium at the Physics Department and 
-                then launched from Mountjoy Hill on the Science Site. After a flight time of 88 minutes, the payload landed south of Consett, a town just outside of the North Pennines around 19 miles from Durham. All equipment used was then 
+                <p>Our team worked remotely over the course of the year to research, design and build the balloon payload. Once it became possible to meet in-person, the modular components were assembled to complete the payload. The balloon was inflated with helium at the Physics Department and
+                then launched from Mountjoy Hill on the Science Site. After a flight time of 88 minutes, the payload landed south of Consett, a town just outside of the North Pennines around 19 miles from Durham. All equipment used was then
                 successfully recovered by the team.
-                </p> 
+                </p>
                 <p>This flight was tracked using a solar Iridium beacon that relayed GPS data and sensor readings to us via the Iridium satellite constellation. This allowed us to follow the balloon in real-time and find it after it had landed.
                     Due to some anomoly mid-flight, the beacon failed to transmit ~10 sequential messages so the maximum altitude reached had to be calculated using predictions from the acquired data and compared to the footage captured.
                 </p>
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/KCOX8ctsIp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <p>The next flight, Aether II, is scheduled for launch in October 2021 and aims to bring improvements to all aspects of the payload. Two additional trackers with data-loggers will be used and an attempt will be made 
-                    to release the teddy bear on a skydive from the edge of space! 
+                <p>The next flight, Aether II, is scheduled for launch in October 2021 and aims to bring improvements to all aspects of the payload. Two additional trackers with data-loggers will be used and an attempt will be made
+                    to release the teddy bear on a skydive from the edge of space!
                 </p>
             </div>
         </div>
@@ -254,7 +244,7 @@
      <section id="aether2" class="container content-section text-center">
         <div class="aether-II-section"> <!--class names need to be all one word, otherwise it's seen as two class names: class="ab" is different fron class="a b", which has both classes "a" and "b"-->
             <h2>Aether II: Highlights</h2>
-	    
+
             <div class="col-md-9 aetherii-content" style="padding-top:15px;text-align: left;">
                 <div class="row" style="text-align:center;">
                     <div class="col-xs-12 col-sm-4">
@@ -273,7 +263,7 @@
                 <p>Inflated with helium that was generously sponsored by the Physics department, DU Spaceflight society’s second high-altitude balloon project, Aether II, was launched from James' Hill on Thursday, 4 November. </p>
                 <p>An enthusiastic team of 15 students witnessed the release of the Helium Latex balloon with great excitement. The giant white sphere was seen to be slowly floating away as a tiny dot and eventually vanishing into the azure sky on the crisp, sunny autumn morning. </p>
                 <p>The project spanned over a month during which students met up every Monday to discuss and design the payload, electronics, and mechanical components of the Balloon.  Similar to its predecessor Aether I, Aether II is equipped with a teddy bear photographer/pilot with an addition of two data-log trackers.
-               The solar iridium satellite tracker relayed the GPS and sensor data back to the team via the iridium satellite constellation. The balloon spent 2hrs 30min in flight and travelled 177 km. It reached the target altitude of 34km before bursting and landing in the peak district; was eventually retrieved by two team members. 
+               The solar iridium satellite tracker relayed the GPS and sensor data back to the team via the iridium satellite constellation. The balloon spent 2hrs 30min in flight and travelled 177 km. It reached the target altitude of 34km before bursting and landing in the peak district; was eventually retrieved by two team members.
                 </p>
                 <p>With the introduction of a stabilisation system, the camera in the payload recorded beautiful high-quality footage of Earth seen from the stratosphere.
                 </p>
@@ -342,12 +332,45 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; DUSPACEFLIGHT 2022</p> 
+            <p>Copyright &copy; DUSPACEFLIGHT 2022</p>
         </div>
     </footer>
 
+
+
+        <script>
+
+        $(document).ready(function(){
+           var scroll_start = 0;
+           var startchange = $('#startchange');
+           var offset = startchange.offset();
+            if (startchange.length){
+           $(document).scroll(function() {
+              scroll_start = $(this).scrollTop();
+              if(scroll_start > offset.top) {
+                  $(".navbar-default").css('background-color', 'black');
+               } else {
+                  $('.navbar-default').css('background-color');
+               }
+           });
+            }
+        });
+        </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 <script src="js/jquery.js"></script>
 <script id="main-script" src="js/index-scripts.js"></script>
+
+
+<!-- Latest compiled JavaScript  save this otherwise the responsive menu does not work -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
 </body>
 
 </html>
+
