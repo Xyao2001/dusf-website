@@ -4,9 +4,13 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ html{
+     scroll-behavior: smooth;;  /* And when you click the anchor, it will automatically scroll to the correct place. The best thing about this is that it requires no javascript, and is supported in every browser. */
+   }
+
 :root {
     --buttoncolor: #F2B807;/*#219ab3; /* blue:#219ab3; purple:#bc7bc7 */
-    --buttoncoloralt: #073673; /* blue:#11505d; purple:#833888 */
+    --buttoncoloralt: #C0C0C0; /* blue:#11505d; purple:#833888 */
 }
 
 body {
@@ -73,12 +77,20 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
+    font-weight: bold;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #0D0D0D;
 }
 
+/*the spacing between each menu options*/
+.navbar-nav > li{
+  padding-left:20px;
+  padding-right:20px;
+}
+
 .navbar-custom .navbar-brand {
     font-weight: 700;
+    font-weight: bold;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -87,7 +99,7 @@ a:focus {
 
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -115,7 +127,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255,255,255,.3); /*white*/
 }
 
 @media(min-width:767px) {
@@ -147,7 +159,7 @@ a:focus {
     text-align: center;
     color: #fff;
     background: url(../images/_head.jpg) no-repeat bottom center scroll;
-    background-color: #0D0D0D;
+    background-color: #0D0D0D; /*black*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -155,7 +167,7 @@ a:focus {
 }
 
 
-.ro_intro {
+.ro_intro {  /*-header class for rocketry page-*/
     display: table;
     width: 100%;
     height: auto;
@@ -355,6 +367,26 @@ a:focus {
   display: inline-block;
 }
 
+
+.dropdown-item.active{
+          background-color:#696969; /*HTML DimGray*/
+        }
+
+.dropdown-item{
+
+  height:35px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 13px;
+}
+
+.dropdown-menu {
+  width: 100%; /*setting the width of a dropdown list*/
+
+}
+.dropdown-menu a{
+    color: #0d0d0d !important;
+}
 .dropdown .dropbtn {
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -362,24 +394,38 @@ a:focus {
   font-size: 13px;
   border: none;
   outline: none;
-  color: white;
+  color: black;
   padding: 13.3px 15px;
   letter-spacing: 1px;
-  background-color: inherit;
+  background-color: black;
   font-family: inherit;
   margin: 0;
 }
 
-.dropdown:hover .dropbtn {
 
-    /*  background-color: rgba(255,255,255,.2);*/
+.dropdown:hover .dropdown-menu {
+ /*!
+  hover is the action
+  */
+    display: block;
+    margin-top: 0;
+
+    background-color: #D3D3D3; /*very light grey*/
+
+ }
+ .dropdown-menu a:hover {
+    padding: 13.3px 15px;
+    background-color: #808080;  /*dark grey*/
+    background-image: none;
 }
+
+
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 180px;
+  background-color: #f9f9f9;  /*very light grey*/
+  min-width: 380px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -392,16 +438,20 @@ a:focus {
   display: block;
   text-align: left;
 }
+/*!
+ a is used to styling the appearance of the link which is given inside the anchor tag.
+ */
 
 .dropdown-content a:hover {
-  background-color: #7d839b;
+  background-color: #7d839b;  /*blue grey*/
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-  background-color: #d4d6de;
+  background-color: #d4d6de;  /*light grey*/
 
 }
+
 
 .video-container {
     position: relative;
